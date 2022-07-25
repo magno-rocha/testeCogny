@@ -36,3 +36,177 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom CSS */
+body {
+  background-color: black;
+  position: relative;
+  min-height: 100%;
+}
+.star {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.logo {    
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  z-index: -1;
+  animation: logo 8s ease-out 3s;
+  opacity: 0;
+}
+
+
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+  0% {
+      width: 10em;        
+      transform: scale(6.75);
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+      width: 10em;      
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.1);
+      width: 10em;        
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.char-name {
+  color: #FFFF82;
+  font-family: 'Star Jedi', arial;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customPag {
+  font-family: 'Star Jedi', arial;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height:40px;
+
+}
+
+.card{
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 255);
+  opacity: 1;
+  text-align: center;
+  align-items: center;
+  width: 20rem;
+  height: 25rem;
+  overflow-y: auto;
+}
+
+.card-btn{
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 30% 20px;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 255);
+  opacity: 1;
+  text-align: center;
+  align-items: center;
+  width: 10rem;
+  ;
+}
+
+.chars{
+  display : inline-block;
+  text-align: center; 
+  min-width: 265px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 255);
+  opacity: 1;
+}
+
+.chars:hover {
+  box-shadow: 0px 0px 20px 0px aqua;
+}
+
+.chars:focus   {
+  box-shadow: 0px 0px 20px 0px aqua;
+}
+
+.chars ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.chars h3{
+  color: aqua;
+  border-bottom: 2px solid orangered;
+  padding-bottom: 5px;
+}
+
+.chars h4{
+  color: orange;
+}
+
+.chars p{
+  color: lightblue;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+}
+
+ .mymove {
+  animation: 17s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+ }
+
+ .card::-webkit-scrollbar {
+  width: 12px;               
+}
+
+.card::-webkit-scrollbar-track {
+  background: transparent;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgray;    
+  border-radius: 5px;       
+  border: transparent;
+}
+
+ @keyframes fadeIn {
+  0% {
+    opacity: -2;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
